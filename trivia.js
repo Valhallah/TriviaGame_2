@@ -14,22 +14,23 @@ var score = 0;
 //main processes
 //===================================
 $(document).ready(function () {
-	$("#wrapper").fadeIn(2000);
+	
 	
 	$('#scoreBox').text(score);
 	
 	// When question1 is answered.
 	$('input[type=checkbox][name=answer1]').change(function() {
 	    $('#question1').hide();
+        //if true display correct message
         if (this.value == 'true') {
             $("#correctDisplay").show();
-            $("#correctDisplay").fadeOut(1000);
+            $("#correctDisplay").fadeOut(3000);
             rightAns++;
             score += 10;
-        }
+        }//if false diplay wrong message
         else if (this.value == 'false') {
             $("#wrongDisplay").show();
-            $("#wrongDisplay").fadeOut(1000);
+            $("#wrongDisplay").fadeOut(3000);
             wrongAns++;
         }
         
@@ -47,7 +48,7 @@ $(document).ready(function () {
         }
         else if (this.value == 'false') {
             $("#correctDisplay").show();
-            $("#correctDisplay").fadeOut(1000);
+            $("#correctDisplay").fadeOut(3000);
             rightAns++;
             score += 10;
         }
@@ -61,13 +62,13 @@ $(document).ready(function () {
         $('#question3').hide();
         if (this.value == 'true') {
             $("#correctDisplay").show();
-            $("#correctDisplay").fadeOut(1000);
+            $("#correctDisplay").fadeOut(3000);
             rightAns++;
             score += 10;
         }
         else if (this.value == 'false') {
             $("#wrongDisplay").show();
-            $("#wrongDisplay").fadeOut(1000);
+            $("#wrongDisplay").fadeOut(3000);
             wrongAns++;
         }
         
@@ -80,12 +81,12 @@ $(document).ready(function () {
         $('#question4').hide();
         if (this.value == 'true') {
             $("#wrongDisplay").show();
-            $("#wrongDisplay").fadeOut(1000);
+            $("#wrongDisplay").fadeOut(3000);
             wrongAns++;
         }
         else if (this.value == 'false') {
             $("#correctDisplay").show();
-            $("#correctDisplay").fadeOut(1000);
+            $("#correctDisplay").fadeOut(3000);
             rightAns++;
             score += 10;
         }
@@ -99,12 +100,12 @@ $(document).ready(function () {
         $('#question5').hide();
         if (this.value == 'true') {
             $("#wrongDisplay").show();
-            $("#wrongDisplay").fadeOut(1000);
+            $("#wrongDisplay").fadeOut(3000);
             wrongAns++;
         }
         else if (this.value == 'false') {
             $("#correctDisplay").show();
-            $("#correctDisplay").fadeOut(1000);
+            $("#correctDisplay").fadeOut(3000);
             rightAns++;
             score += 10;
         }
@@ -118,13 +119,13 @@ $(document).ready(function () {
         $('#question6').hide();
         if (this.value == 'true') {
             $("#correctDisplay").show();
-            $("#correctDisplay").fadeOut(1000);
+            $("#correctDisplay").fadeOut(3000);
             rightAns++;
             score += 10;
         }
         else if (this.value == 'false') {
             $("#wrongDisplay").show();
-            $("#wrongDisplay").fadeOut(1000);
+            $("#wrongDisplay").fadeOut(3000);
             wrongAns++;
         }
         
@@ -137,17 +138,19 @@ $(document).ready(function () {
         $('#question7').hide();
         if (this.value == 'true') {
             $("#wrongDisplay").show();
-            $("#wrongDisplay").fadeOut(1000);
+            $("#wrongDisplay").fadeOut(3000);
             wrongAns++;
         }
         else if (this.value == 'false') {
             $("#correctDisplay").show();
-            $("#correctDisplay").fadeOut(1000);
+            $("#correctDisplay").fadeOut(3000);
             rightAns++;
             score += 10;
         }
         
+        //displays score
         $('#scoreBox').text(score);
+        //displays results at end
         $('#resultsDisplay').text("Congrats! You got " + rightAns + " of 7 questions correct!");
         $('#resultsDisplay').show();
     });

@@ -15,7 +15,7 @@ background-size: cover;
 .jumbotron {
 	background-image: url("rebel.jpg");
 	text-align: center;
-	height: 760px;
+	
 	font-family: 'Cuprum', sans-serif;
 	font-size: 60px;	
 }
