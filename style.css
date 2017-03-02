@@ -1,0 +1,61 @@
+body{
+background-image: url("rebel.jpg");
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.game_title {
+	font-size: 90px;
+	color: #fff;
+	font-family: 'Bungee', Arial;
+}
+
+.jumbotron {
+	background-image: url("rebel.jpg");
+	text-align: center;
+	height: 760px;
+	font-family: 'Cuprum', sans-serif;
+	font-size: 60px;	
+}
+
+form {
+	margin-top: 40px;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+}
+
+.questionBox {
+	height: 400px;
+	width: 460px;
+	margin: auto;
+	overflow: auto;
+	font-family: 'Cuprum', sans-serif;
+}
+
+.btn {
+	font-family: 'Cuprum', sans-serif;
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	font-size: 30px;
+}
+
+.gameMsg {
+	text-align: center;
+	height: 800px;
+	font-size: 60px;
+	color: #fff;	
+}
+
+.triviaTimer {
+	font-family: 'Cuprum', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+}
+
+

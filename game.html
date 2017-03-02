@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Trivia Game</title>
+      <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <!-- Title font -->
+      <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+      <!-- Main font -->
+      <link href="https://fonts.googleapis.com/css?family=Bungee|Cuprum" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+      <div class="container">
+         <div class="row text-center">
+            <div class="col-lg-12">
+               <span id="title" class="game_title">Star Wars Trivia Game</span>
+            </div>
+         </div>
+         <div class="row text-center">
+            <div class="col-lg-12">         
+                <div><h3 class="triviaTimer">Current Score: </h3><span class="triviaTimer" id="scoreBox"></span></div>
+            </div>
+         </div>
+         <div class="row text-center">        
+                <div><h3 id="resultsDisplay" style="display:none;" class="triviaTimer">Congrats!</h3></div>
+         </div>
+         <form>
+            <div class="questionBox" id="wrapper">
+               <!--Question 1-->
+               <div id="question1" class="question">
+                  <label class="checkbox">Han Shot First.</label>
+                  <input type="checkbox" name="answer1" value="true">&nbsp;True&nbsp;&nbsp;
+                  <input type="checkbox" name="answer1" value="false">&nbsp;False
+               </div>
+               <!--Question 2-->  
+               <div id="question2" class="question" style="display:none;">
+                  <label class="checkbox">In Episodes 4 and 5 Luke's lightsaber is green.</label>
+                  <input type="checkbox" name="answer2" value="true">&nbsp;True&nbsp;&nbsp;
+                  <input type="checkbox" name="answer2" value="false">&nbsp;False
+               </div>
+               <!--Question 3-->  
+               <div id="question3" class="question" style="display:none;">
+                  <label class="checkbox">On the planet of Jakku, Rey lives inside the remains of an AT-AT.</label>
+                  <input type="checkbox" name="answer3" value="true">&nbsp;True&nbsp;&nbsp;
+                  <input type="checkbox" name="answer3" value="false">&nbsp;False
+               </div>
+               <!--Question 4-->  
+               <div id="question4" class="question" style="display:none;">
+                  <label class="checkbox">The creature Han cuts open, after it's death, to keep Luke warm on Hoth is called a Wampa.</label>
+                  <input type="checkbox" name="answer4" value="true">&nbsp;True&nbsp;&nbsp;
+                  <input type="checkbox" name="answer4" value="false">&nbsp;False
+               </div>
+               <!--Question 5-->  
+               <div id="question5" class="question" style="display:none;">
+                  <label class="checkbox">Luke Skywalker is not mentioned in the Opening crawl of The Force Awakens.</label>
+                  <input type="checkbox" name="answer5" value="true">&nbsp;True&nbsp;&nbsp;
+                  <input type="checkbox" name="answer5" value="false">&nbsp;False
+               </div>
+               <!--Question 6-->  
+               <div id="question6" class="question" style="display:none;">
+                  <label class="checkbox">The Ewoks are from the planet Endor.</label>
+                  <input type="checkbox" name="answer6" value="true">&nbsp;True&nbsp;&nbsp;
+                  <input type="checkbox" name="answer6" value="false">&nbsp;False
+               </div>
+               <!--Question 7-->  
+               <div id="question7" class="question" style="display:none;">
+                  <label class="checkbox">Kylo Ren is a Sith.</label>
+                  <input type="checkbox" name="answer7" value="true">&nbsp;True&nbsp;&nbsp;
+                  <input type="checkbox" name="answer7" value="false">&nbsp;False
+               </div>
+               <div class="row text-center">        
+                <div id="correctDisplay" style="display:none;"><h3 class="triviaTimer">CORRECT!</h3></div>
+                <div id="wrongDisplay" style="display:none;"><h3 class="triviaTimer">WRONG!</h3></div>
+         </div>
+            </div>
+            </form>
+         </div>
+         <a href="index.html"><button class="btn" id="resetBtn">Start Over</button></a>
+      </div>
+      <script type="text/javascript" src="trivia.js"></script>
+   </body>
+</html>
