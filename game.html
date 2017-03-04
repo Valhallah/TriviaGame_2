@@ -31,12 +31,22 @@
          </div>
          <form>
             <div class="questionBox" id="wrapper">
-               <!--Question 1-->
-               <div id="question1" class="question">
-                  <label class="checkbox">Han Shot First.</label>
-                  <input type="checkbox" name="answer1" value="true">&nbsp;True&nbsp;&nbsp;
-                  <input type="checkbox" name="answer1" value="false">&nbsp;False
+               <!--Question-->
+               <div id="questionDiv" class="question">
+                  <label id="questionLabel" class="checkbox">Han Shot First.</label>
+                  <input type="checkbox" name="answer" value="0">&nbsp;True&nbsp;&nbsp;
+                  <input type="checkbox" name="answer" value="1">&nbsp;False
                </div>
+               <div class="row text-center">
+                  <div id="correctDisplay" style="display:none;">
+                     <h3 class="score">Much you have learned, yeeees!</h3>
+                  </div>
+                  <div id="wrongDisplay" style="display:none;">
+                     <h3 class="score">No! You must unlearn what you have learned.</h3>
+                  </div>
+               </div>
+            </div>
+         
                <!--Question 2-->  
                <!--<div id="question2" class="question" style="display:none;">
                   <label class="checkbox">In Episodes 4 and 5 Luke's lightsaber is green.</label>
@@ -73,9 +83,7 @@
                   <input type="checkbox" name="answer7" value="true">&nbsp;True&nbsp;&nbsp;
                   <input type="checkbox" name="answer7" value="false">&nbsp;False
                </div>-->
-               <div class="row text-center">        
-                <div id="correctDisplay" style="display:none;"><h3 class="triviaTimer">Correct, you are, yes!</h3></div>
-                <div id="wrongDisplay" style="display:none;"><h3 class="triviaTimer">No! You must unlearn what you have learned!</h3></div>
+               
          </div>
             </div>
             </form>
