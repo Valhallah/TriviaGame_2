@@ -43,7 +43,7 @@ $(document).ready(function () {
         $('#question2').hide();
         if (this.value == 'true') {
             $("#wrongDisplay").show();
-            $("#wrongDisplay").fadeOut(1000);
+            $("#wrongDisplay").fadeOut(3000);
             wrongAns++;
         }
         else if (this.value == 'false') {
